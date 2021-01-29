@@ -29,6 +29,7 @@ app.use(
 /**
  * Primary app route(s).
  */
+app.get('/', hello);
 app.get('/hello', hello);
 
 /**
