@@ -1,0 +1,5 @@
+api/dist/
+api/node_modules/
+api/yarn.lock
+api/yarn-error.log
+esp8266/main/config.h
