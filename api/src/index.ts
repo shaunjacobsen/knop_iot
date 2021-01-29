@@ -1,4 +1,5 @@
 import * as express from 'express';
+const morgan = require('morgan');
 
 import hello from './controllers/';
 
@@ -25,6 +26,8 @@ app.use(
     next();
   },
 );
+
+app.use(morgan('common'));
 
 /**
  * Primary app route(s).
