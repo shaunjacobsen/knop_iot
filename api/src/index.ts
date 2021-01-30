@@ -1,7 +1,7 @@
 import * as express from 'express';
 const morgan = require('morgan');
 
-import hello from './controllers/';
+import respond_event from './controllers/';
 
 /**
  * Create Express server.
@@ -32,8 +32,7 @@ app.use(morgan('common'));
 /**
  * Primary app route(s).
  */
-app.get('/', hello);
-app.get('/hello', hello);
+app.post('/event', respond_event);
 
 /**
  * Start Express server.
