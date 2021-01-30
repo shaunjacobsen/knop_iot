@@ -17,3 +17,9 @@ const char* url = "http://0.0.0.0"; // the url of the API endpoint
 _Hopefully it is obvious why this information is not in the `main.ino` file._
 
 2. Upload the arduino code to the ESP8266 device.
+
+###### Visual feedback
+**Solid white LED**: Connecting to WiFi
+**Blinking green LED**: Request successful (200 HTTP status)
+**Blinking red LED**: Request error (HTTP error)
+**Solid red LED**: Other error, likely with Arduino code
